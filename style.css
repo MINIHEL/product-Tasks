@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf2ff;
+  font-family: Arial, sans-serif;
+}
+
+.summary-card {
+  display: flex;
+  width: 600px;
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.result-section,
+.summary-section {
+  width: 50%;
+  padding: 30px;
+}
+
+.result-section {
+  background: linear-gradient(#7755ff, #2f2ce9);
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.result-section h1 {
+  font-size: 20px;
+  color: #cac9ff;
+}
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+  margin: 30px auto;
+  border-radius: 50%;
+  background: linear-gradient(#4d21c9, transparent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.total {
+  color: #cac9ff;
+  font-size: 14px;
+}
+
+.result-section p {
+  color: #cac9ff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.summary-section h2 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 14px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.reaction {
+  background-color: #fff6f5;
+  color: #ff5555;
+}
+
+.memory {
+  background-color: #fffbf2;
+  color: #ffb21e;
+}
+
+.verbal {
+  background-color: #f2fbfa;
+  color: #00bb8f;
+}
+
+.visual {
+  background-color: #f3f3fd;
+  color: #1125d6;
+}
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #303b59;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4d21c9;
+}
+
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    background-color: white;
+  }
+
+  .summary-card {
+    width: 100%;
+    flex-direction: column;
+    border-radius: 0;
+  }
+
+  .result-section,
+  .summary-section {
+    width: 100%;
+  }
+
+  .result-section {
+    border-radius: 0 0 30px 30px;
+  }
+}
